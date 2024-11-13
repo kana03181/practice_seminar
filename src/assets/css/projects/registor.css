@@ -9,7 +9,7 @@
 .p-registor__form {
   padding-block: clamp(50 / 16 * 1rem, 2.36rem + 3.82vw, 90 / 16 * 1rem) clamp(40 / 16 * 1rem, 1.735rem + 3.82vw, 80 / 16 * 1rem);
   margin-block-start: clamp(32 / 16 * 1rem, 1.465rem + 2.68vw, 60 / 16 * 1rem);
-  background-color: var(--color-main);
+  background-color: var(--bg-registor);
   border: 5px solid var(--color-accent);
   border-radius: pxtorem(20px);
 }
@@ -28,24 +28,42 @@
 }
 
 .p-registor__form__options {
+  border: none;
+}
+
+.p-registor__form__choices {
+  display: flex;
+  flex-direction: column;
+  gap: pxtorem(5px);
+
   @media (--md) {
-    display: flex;
-    column-gap: pxtorem(35px);
+    flex-direction: initial;
+    gap: pxtorem(35px);
+    align-items: center;
   }
 }
 
-.p-registor__form__item {
-  margin-block-end: pxtorem(10px);
-}
-
-.p-registor__form__name,
-.p-registor__form__option {
-  font-size: clamp(15 / 16 * 1rem, 0.918rem + 0.1vw, 16 / 16 * 1rem);
+.p-registor__form__items {
+  display: flex;
+  flex-direction: column;
+  gap: pxtorem(10px);
   color: var(--color-text);
   letter-spacing: 0.05em;
 }
 
+.p-registor__form__option {
+  label {
+    font-size: clamp(15 / 16 * 1rem, 0.918rem + 0.1vw, 16 / 16 * 1rem);
+  }
+}
+
+.p-registor__form__text {
+  display: block;
+  margin-inline-start: pxtorem(5px);
+}
+
 .p-registor__form__name {
+  font-size: pxtorem(16px);
   font-weight: 700;
   line-height: 1.125;
 }
@@ -82,6 +100,10 @@
 .p-registor__form__textField.-message {
   max-width: pxtorem(600px);
   min-height: 200px;
+}
+
+.p-registor__form__textField.-selectBox {
+  color: var(--color-text-registor);
 }
 
 .p-registor__button {

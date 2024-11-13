@@ -21,8 +21,10 @@
   --color-accent: #d136d1;
   --color-button: #dd118e;
   --color-text: #fff;
+  --color-text-registor: #333;
   --color-form-border: #aaa;
   --color-hover: #8e8e8e;
+  --bg-registor: #1a1a1a;
   --bg-gradient: 104.71deg, #0e002e 0%, #1e092b 23.1%, #320c65 49.12%, #a01b7c 79.8%, #c21780 100%;
   --button-gradient-hero: 90deg, #c41a7f 0%, #664bbf 100%;
   --button-gradient-about: 270deg, #ba2073 0%, #664bbf 100%;

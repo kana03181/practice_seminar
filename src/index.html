@@ -278,64 +278,61 @@
 
           <div class="l-container">
             <form action="#" method="post" class="p-registor__form">
-              <dl class="p-registor__form__inner">
+              <div class="p-registor__form__inner">
                 <div class="p-registor__form__items">
-                  <div class="p-registor__form__job">
-                    <dt class="p-registor__form__item">
-                      <p class="p-registor__form__name">ご職業<span class="-sm -required">*必須</span></p>
-                    </dt>
-                  </div>
-                  <!-- /.p-registor__form__options -->
-                  <div class="p-registor__form__options">
-                    <dd class="p-registor__form__option">
-                      <input type="radio" id="job_employee" name="job" value="job" required />
-                      <label for="job_employee">会社員</label>
-                    </dd>
-                    <dd class="p-registor__form__option">
-                      <input type="radio" id="job_selfemployed" name="job" value="job" required />
-                      <label for="job_selfemployed">個人事業主</label>
-                    </dd>
-                    <dd class="p-registor__form__option">
-                      <input type="radio" id="job_seeking" name="job" value="job" required />
-                      <label for="job_seeking">求職中</label>
-                    </dd>
-                    <dd class="p-registor__form__option">
-                      <input type="radio" id="job_other" name="job" value="job" required />
-                      <label for="job_other">その他</label>
-                    </dd>
-                  </div>
-                  <!-- /.p-registor__form__options -->
+                  <p class="p-registor__form__name">ご職業<span class="-sm -required">*必須</span></p>
+                  <fieldset class="p-registor__form__options">
+                    <legend class="u-visuallyHidden">該当するご職業を選択してください。</legend>
+                    <ul class="p-registor__form__choices">
+                      <li class="p-registor__form__option">
+                        <label for="job_employee">
+                          <input type="radio" id="job_employee" name="job" value="job" required />
+                          会社員
+                        </label>
+                      </li>
+                      <li class="p-registor__form__option">
+                        <label for="job_selfemployed">
+                          <input type="radio" id="job_selfemployed" name="job" value="job" required />
+                          個人事業主
+                        </label>
+                      </li>
+                      <li class="p-registor__form__option">
+                        <label for="job_seeking">
+                          <input type="radio" id="job_seeking" name="job" value="job" required />
+                          求職中
+                        </label>
+                      </li>
+                      <li class="p-registor__form__option">
+                        <label for="job_other">
+                          <input type="radio" id="job_other" name="job" value="job" required />
+                          その他
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
                 </div>
                 <!-- /.p-registor__form__items -->
                 <div class="p-registor__form__items">
-                  <dt class="p-registor__form__item">
-                    <p class="p-registor__form__name">お名前<span class="-sm -required">*必須</span></p>
-                  </dt>
-                  <dd class="p-registor__form__fields">
+                  <p class="p-registor__form__name">お名前<span class="-sm -required">*必須</span></p>
+                  <label class="p-registor__form__fields">
                     <input type="text" name="name" class="p-registor__form__textField -name" required />
-                  </dd>
+                  </label>
                 </div>
                 <div class="p-registor__form__items">
-                  <dt class="p-registor__form__item">
-                    <p class="p-registor__form__name">メールアドレス<span class="-sm -required">*必須</span></p>
-                  </dt>
-                  <dd class="p-registor__form__fields">
+                  <p class="p-registor__form__name">メールアドレス<span class="-sm -required">*必須</span></p>
+                  <label class="p-registor__form__fields">
                     <input type="email" name="name" class="p-registor__form__textField -email" required />
-                  </dd>
+                  </label>
                 </div>
                 <div class="p-registor__form__items">
-                  <dt class="p-registor__form__item">
-                    <p class="p-registor__form__name">電話番号<span class="-sm">（半角数字ハイフンなし）</span></p>
-                  </dt>
-                  <dd class="p-registor__form__fields">
+                  <p class="p-registor__form__name">電話番号<span class="-sm">（半角数字ハイフンなし）</span></p>
+                  <label class="p-registor__form__fields">
                     <input type="tel" name="name" class="p-registor__form__textField -tel" />
-                  </dd>
+                  </label>
                 </div>
                 <div class="p-registor__form__items">
-                  <dt class="p-registor__form__item">
-                    <p class="p-registor__form__name">スピーカーに質問したいこと<span class="-sm -required">*必須</span></p>
-                  </dt>
-                  <dd class="p-registor__form__fields">
+                  <p class="p-registor__form__name">スピーカーに質問したいこと<span class="-sm -required">*必須</span></p>
+                  <label class="p-registor__form__fields">
                     <textarea
                       name="message"
                       id="message"
@@ -345,22 +342,18 @@
                       placeholder="ご自由にお書きください"
                       required
                     ></textarea>
-                  </dd>
+                  </label>
                 </div>
                 <div class="p-registor__form__items">
-                  <dt class="p-registor__form__item">
-                    <p class="p-registor__form__name">WDCをどちらでお知りになりましたか？<span class="-sm -required">*必須</span></p>
-                  </dt>
-                  <dd class="p-registor__form__fields">
-                    <select name="know" id="know" class="p-registor__form__textField -selectBox">
-                      <option value="">選択してください</option>
-                      <option value="know">SNS</option>
-                      <option value="know">友人からの紹介</option>
-                      <option value="know">Web検索</option>
-                    </select>
-                  </dd>
+                  <p class="p-registor__form__name">WDCをどちらでお知りになりましたか？<span class="-sm -required">*必須</span></p>
+                  <select name="know" id="know" class="p-registor__form__textField -selectBox">
+                    <option value="">選択してください</option>
+                    <option value="SNS">SNS</option>
+                    <option value="友人からの紹介">友人からの紹介</option>
+                    <option value="Web検索">Web検索</option>
+                  </select>
                 </div>
-              </dl>
+              </div>
               <p class="p-registor__button">
                 <button type="submit" class="c-button -registor">送信する</button>
               </p>
