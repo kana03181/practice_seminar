@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.p-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: fluid(24, 30);
+}
+
+.p-header__list {
+  text-align: center;
+  list-style: none;
+}
+
+.p-header__link {
+  position: relative;
+  display: block;
+  padding: pxtorem(16px);
+  font-family: var(--font-sans-en);
+  font-size: pxtorem(16px);
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (--md) {
+    padding: pxtorem(5px);
+  }
+}
+
+.p-header__link::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  content: "";
+  background-color: var(--color-hover);
+  transition: var(--duration-fast) var(--ease-in-out);
+  transition-property: transform;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.p-header__link:hover::after {
+  transform: scale(1, 1);
+}

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WDC" />
+    <meta property="og:url" content="https://webdesigner-go.com/wdc/" />
+    <meta
+      property="og:description"
+      content="Web Design Conference（WDC）は、最新のWebデザインのトレンドやワーキングスタイルを紹介するイベントを開催。お気軽にご参加ください。"
+    />
+    <meta property="og:image" content="https://webdesigner-go.com/wdc/img/ogp.png" />
+    <title>WDC</title>
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__inner p-header__inner">
+        <h1 class="c-logo">
+          <a href="#">WDC</a>
+        </h1>
+        <nav class="p-header__nav">
+          <h2 class="u-visuallyHidden">サイト内メニュー</h2>
+          <button type="button" class="p-hamburger js-hamburger" aria-controls="global-nav" aria-expanded="false">
+            <span class="p-hamburger__line">
+              <span class="u-visuallyHidden">メニューを開閉する</span>
+            </span>
+          </button>
+          <ul id="global-nav" class="p-global-nav" lang="en">
+            <li class="p-header__list">
+              <a href="#about" class="p-header__link js-header__link">about</a>
+            </li>
+            <li class="p-header__list">
+              <a href="#speaker" class="p-header__link js-header__link">speaker</a>
+            </li>
+            <li class="p-header__list">
+              <a href="#session" class="p-header__link js-header__link">session</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="l-hero -home">
+        <div class="p-hero__bg">
+          <div class="p-hero__inner">
+            <div class="p-hero__items">
+              <div class="p-hero__left">
+                <div class="p-hero__body">
+                  <div class="p-hero__copy">
+                    <p class="p-hero__text -subtitle js-hero">Web Design <wbr />Conference vol.24</p>
+                    <p class="p-hero__text -title js-hero"><span>WORK</span> <span>REVOLUTION</span></p>
+                    <p class="p-hero__text -date js-hero"><time datetime="2030-05-30">2030.05.30</time></p>
+                  </div>
+                  <p class="p-hero__text__img js-hero__img">
+                    <img src="/assets/img/hero_text.svg" width="326" height="68" alt="" />
+                  </p>
+                  <!-- /.p-hero__texts -->
+                </div>
+                <!-- /.p-hero__body -->
+                <p class="p-hero__button js-hero"><a href="#" class="c-button -hero">お申し込み</a></p>
+              </div>
+              <!-- /.p-hero__left -->
+              <p class="p-hero__profile">
+                ショーン・デイビット・ジュニア<span class="-sm">氏</span>
+                <span class="p-hero__job">Webデザイナー</span>
+              </p>
+            </div>
+            <!-- /.p-hero__items -->
+          </div>
+          <!-- /.p-hero__inner -->
+        </div>
+        <!-- /.p-hero__bg -->
+      </div>
+      <section id="about" class="l-about">
+        <div class="p-about__bg">
+          <div class="l-container">
+            <h2 class="c-title" lang="en">
+              about
+              <span class="-small">イベントについて</span>
+            </h2>
+            <div class="p-about__content">
+              <div class="p-about__items">
+                <div class="p-about_texts">
+                  <h3 class="p-about_theme">
+                    テーマ
+                    <span class="-lg">定時で帰る</span>
+                  </h3>
+                  <p class="p-about_sentence">
+                    残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！<br />
+                    さぁ、Let's go home now!
+                  </p>
+                </div>
+                <dl class="p-about__detail">
+                  <div class="p-about__detail__item">
+                    <dt class="p-about__detail__text">日時</dt>
+                    <dd class="p-about__detail__text">
+                      <span>2030</span>年<span>5</span>月<span>30</span>日（土）&ensp;<span>13:00</span>-翌朝<span>13:00</span>
+                    </dd>
+                  </div>
+                  <div class="p-about__detail__item">
+                    <dt class="p-about__detail__text">会場</dt>
+                    <dd class="p-about__detail__text">オンライン</dd>
+                  </div>
+                  <div class="p-about__detail__item">
+                    <dt class="p-about__detail__text">定員</dt>
+                    <dd class="p-about__detail__text"><span>3</span>名</dd>
+                  </div>
+                  <div class="p-about__detail__item">
+                    <dt class="p-about__detail__text">参加費</dt>
+                    <dd class="p-about__detail__text">無料</dd>
+                  </div>
+                </dl>
+                <!-- /.p-about__detail -->
+                <p class="p-about__about"><a href="#" class="c-button -about">お申し込み</a></p>
+              </div>
+              <!-- /.p-about__items -->
+              <figure class="p-about__img">
+                <img
+                  srcset="/assets/img/about_img.jpg 1x, /assets/img/about_img@2x.jpg 2x"
+                  src="/assets/img/about_img.jpg"
+                  width="445"
+                  height="650"
+                  alt="暗い部屋に置かれたデスクとパソコン"
+                />
+              </figure>
+              <!-- /.p-about_texts -->
+            </div>
+            <!-- /.p-about__content -->
+          </div>
+          <!-- /.l-container -->
+        </div>
+        <!-- /.p-about__bg -->
+      </section>
+      <section id="speaker" class="l-speaker">
+        <div class="p-speaker__bg">
+          <div class="l-container">
+            <h2 class="c-title" lang="en">
+              speaker
+              <span class="-small">スピーカー</span>
+            </h2>
+            <div class="p-speaker__items">
+              <div class="p-speaker__texts">
+                <p class="p-speaker__name">
+                  Shawn David Jr
+                  <span class="-jp">ショーン・デイビット・ジュニア</span>
+                </p>
+                <p class="p-speaker__sentence">
+                  株式会社スタート代表取締役。Webデザイナー。<br />
+                  定時になると仕事用の脳と身体機能が停止し自動的に帰路につく男。ショーン氏のその姿は人間と言うよりもさながらアンドロイドのようである。<br />
+                  ショーン氏は著書『会社ではアンドロイドになれ』の中でこう語っている。<br />
+                  「会社における仕事において、我々は自分を機械、そうアンドロイドと思い込むべきだ。定時になれば自動で仕事用の機能は停止されるのだ。決められた時間に、設定されたタスクのみを行う、それがアンドロイドの役目だろう？そして、それは会社で働く我々人間の権利でもある」<br />
+                  アンドロイドのように働くべきと語るショーン氏の考え方はディストピア思想と揶揄されるが、本イベントでは氏の考え方をたっぷりと味わいたい。
+                </p>
+              </div>
+              <figure class="p-speaker__img js-speaker__img">
+                <img
+                  srcset="/assets/img/speaker_img1.jpg 1x, /assets/img/speaker_img1@2x.jpg 2x"
+                  src="/assets/img/speaker_img1.jpg"
+                  alt="ショーン・デイビット・ジュニア"
+                />
+              </figure>
+            </div>
+            <!-- /.p-speaker__items -->
+            <div class="p-speaker__items">
+              <div class="p-speaker__texts">
+                <p class="p-speaker__name">
+                  Mihoko Tennis
+                  <span class="-jp">ミホコ・テニース</span>
+                </p>
+                <p class="p-speaker__sentence">
+                  会社員兼プロテニスプレイヤー。WTOランキング63,984位。<br />
+                  会社員をしながらプロテニスプレイヤーとしても生計を立てているミホコ氏。平日は仕事で忙しい中、一体どのようにテニスの練習時間を捻出しているのか？会社にもテニスラケットを持ち込むというミホコ氏のワーキングスタイルに迫る。
+                </p>
+              </div>
+              <figure class="p-speaker__img js-speaker__img">
+                <img
+                  srcset="/assets/img/speaker_img2.jpg 1x, /assets/img/speaker_img2@2x.jpg 2x"
+                  src="/assets/img/speaker_img2.jpg"
+                  alt="ミホコ・テニース"
+                />
+              </figure>
+            </div>
+            <!-- /.p-speaker__items -->
+            <div class="p-speaker__items">
+              <div class="p-speaker__texts">
+                <p class="p-speaker__name">
+                  Jecica Pannacotta
+                  <span class="-jp">ジェシカ・パンナコッタ</span>
+                </p>
+                <p class="p-speaker__sentence">
+                  フリーランスのエンジニア。<br />
+                  「絶対に自宅でフルリモートで働く」という徹底したモットーに基づき、約7年間外出をしていない。インターネットを信仰しており、リアルやオフラインよりもオンラインを最重要視するライフスタイルを実践している。「外に出たら負け」が口グセのジェシカ氏の『超ネット仕事術』は必聴。
+                </p>
+              </div>
+              <figure class="p-speaker__img js-speaker__img">
+                <img
+                  srcset="/assets/img/speaker_img3.jpg 1x, /assets/img/speaker_img3@2x.jpg 2x"
+                  src="/assets/img/speaker_img3.jpg"
+                  alt="ジェシカ・パンナコッタ"
+                />
+              </figure>
+            </div>
+            <!-- /.p-speaker__items -->
+          </div>
+          <!-- /.l-container -->
+        </div>
+        <!-- /.p-speaker__bg -->
+      </section>
+      <section id="session" class="l-session">
+        <div class="p-session__bg">
+          <div class="l-container">
+            <h2 class="c-title" lang="en">
+              session
+              <span class="-small">セッション</span>
+            </h2>
+            <dl class="p-session__detail">
+              <div class="p-session__items">
+                <dt class="p-session__time">13:00-14:00</dt>
+                <dd class="p-session__texts">
+                  <p class="p-session__sentence -lg">ライトニングトーク：定時に帰る、それはアンドロイドになること</p>
+                  <p class="p-session__sentence">
+                    スピーカー：ショーン・デイビット・ジュニア<br />人間らしくあろうとすること、それが残業を生むのだ。さぁ！アンドロイドになるのだ！
+                  </p>
+                </dd>
+              </div>
+              <div class="p-session__items">
+                <dt class="p-session__time">14:00-18:00</dt>
+                <dd class="p-session__texts">
+                  <p class="p-session__sentence -lg">ショーンのとっておきの定時に帰る方法</p>
+                  <p class="p-session__sentence">
+                    スピーカー：ショーン・デイビット・ジュニア<br />アンドロイド的定時に帰る方法を紹介。ワタシ、テイジデカエリマス。
+                  </p>
+                </dd>
+              </div>
+              <div class="p-session__items">
+                <dt class="p-session__time">18:00-24:00</dt>
+                <dd class="p-session__texts">
+                  <p class="p-session__sentence -lg">ライトニングトーク：公私混同仕事術</p>
+                  <p class="p-session__sentence">
+                    スピーカー：ミホコ・テニース<br />私は会社にもテニスラケットを持ち込む。そう、もういっそのこと仕事と趣味の境界線を消しましょう。
+                  </p>
+                </dd>
+              </div>
+              <div class="p-session__items">
+                <dt class="p-session__time">24:00-13:00</dt>
+                <dd class="p-session__texts">
+                  <p class="p-session__sentence -lg">ライトニングトーク：超ネット仕事術</p>
+                  <p class="p-session__sentence">
+                    スピーカー：ジェシカ・パンナコッタ<br />７年間一度も外出せずに仕事をする方法を紹介。自宅大好きっ！
+                  </p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <!-- /.l-container -->
+        </div>
+        <!-- /.p-session__bg -->
+      </section>
+      <!-- /.l-session -->
+      <section class="l-registor">
+        <div class="p-registor__bg">
+          <h2 class="c-title" lang="en">
+            registor
+            <span class="-small">お申し込み</span>
+          </h2>
+
+          <div class="l-container">
+            <form action="#" method="post" class="p-registor__form">
+              <dl class="p-registor__form__inner">
+                <div class="p-registor__form__items">
+                  <div class="p-registor__form__job">
+                    <dt class="p-registor__form__item">
+                      <p class="p-registor__form__name">ご職業<span class="-sm -required">*必須</span></p>
+                    </dt>
+                  </div>
+                  <!-- /.p-registor__form__options -->
+                  <div class="p-registor__form__options">
+                    <dd class="p-registor__form__option">
+                      <input type="radio" id="job_employee" name="job" value="job" required />
+                      <label for="job_employee">会社員</label>
+                    </dd>
+                    <dd class="p-registor__form__option">
+                      <input type="radio" id="job_selfemployed" name="job" value="job" required />
+                      <label for="job_selfemployed">個人事業主</label>
+                    </dd>
+                    <dd class="p-registor__form__option">
+                      <input type="radio" id="job_seeking" name="job" value="job" required />
+                      <label for="job_seeking">求職中</label>
+                    </dd>
+                    <dd class="p-registor__form__option">
+                      <input type="radio" id="job_other" name="job" value="job" required />
+                      <label for="job_other">その他</label>
+                    </dd>
+                  </div>
+                  <!-- /.p-registor__form__options -->
+                </div>
+                <!-- /.p-registor__form__items -->
+                <div class="p-registor__form__items">
+                  <dt class="p-registor__form__item">
+                    <p class="p-registor__form__name">お名前<span class="-sm -required">*必須</span></p>
+                  </dt>
+                  <dd class="p-registor__form__fields">
+                    <input type="text" name="name" class="p-registor__form__textField -name" required />
+                  </dd>
+                </div>
+                <div class="p-registor__form__items">
+                  <dt class="p-registor__form__item">
+                    <p class="p-registor__form__name">メールアドレス<span class="-sm -required">*必須</span></p>
+                  </dt>
+                  <dd class="p-registor__form__fields">
+                    <input type="email" name="name" class="p-registor__form__textField -email" required />
+                  </dd>
+                </div>
+                <div class="p-registor__form__items">
+                  <dt class="p-registor__form__item">
+                    <p class="p-registor__form__name">電話番号<span class="-sm">（半角数字ハイフンなし）</span></p>
+                  </dt>
+                  <dd class="p-registor__form__fields">
+                    <input type="tel" name="name" class="p-registor__form__textField -tel" />
+                  </dd>
+                </div>
+                <div class="p-registor__form__items">
+                  <dt class="p-registor__form__item">
+                    <p class="p-registor__form__name">スピーカーに質問したいこと<span class="-sm -required">*必須</span></p>
+                  </dt>
+                  <dd class="p-registor__form__fields">
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="p-registor__form__textField -message"
+                      cols="80"
+                      rows="1"
+                      placeholder="ご自由にお書きください"
+                      required
+                    ></textarea>
+                  </dd>
+                </div>
+                <div class="p-registor__form__items">
+                  <dt class="p-registor__form__item">
+                    <p class="p-registor__form__name">WDCをどちらでお知りになりましたか？<span class="-sm -required">*必須</span></p>
+                  </dt>
+                  <dd class="p-registor__form__fields">
+                    <select name="know" id="know" class="p-registor__form__textField -selectBox">
+                      <option value="">選択してください</option>
+                      <option value="know">SNS</option>
+                      <option value="know">友人からの紹介</option>
+                      <option value="know">Web検索</option>
+                    </select>
+                  </dd>
+                </div>
+              </dl>
+              <p class="p-registor__button">
+                <button type="submit" class="c-button -registor">送信する</button>
+              </p>
+            </form>
+          </div>
+          <!-- /.l-container -->
+        </div>
+      </section>
+      <footer class="l-footer js-footer">
+        <div class="p-footer__bg">
+          <p class="p-footer__button js-footer__button">
+            <a href="#top" class="c-button -toTop"><span class="u-visuallyHidden">トップへ戻る</span></a>
+          </p>
+          <p class="p-footer__copyRight"><small>&copy; 2030 Web Design Conference</small></p>
+        </div>
+        <!-- /.p-footer__bg -->
+      </footer>
+    </main>
+  </body>
+</html>
