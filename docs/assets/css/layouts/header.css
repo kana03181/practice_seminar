@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.l-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.l-header__inner {
+  padding-inline: 5%;
+
+  @media (--md) {
+    padding-inline: 3%;
+  }
+
+  @media (--lg) {
+    padding-inline: pxtorem(30px);
+  }
+}

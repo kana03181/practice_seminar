@@ -18,11 +18,11 @@
   @media (--md) {
     right: 3%;
   }
-}
 
-.js-footer__button.is-fadeIn {
-  visibility: visible;
-  opacity: 1;
+  &.is-fadeIn {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .p-footer__copyRight {

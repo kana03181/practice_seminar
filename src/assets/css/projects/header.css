@@ -27,21 +27,21 @@
   @media (--md) {
     padding: pxtorem(5px);
   }
-}
 
-.p-header__link::after {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  content: "";
-  background-color: var(--color-hover);
-  transition: var(--duration-fast) var(--ease-in-out);
-  transition-property: transform;
-  transform: scale(0, 1);
-  transform-origin: left top;
+  &::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    content: "";
+    background-color: var(--color-hover);
+    transition: var(--duration-fast) var(--ease-in-out);
+    transition-property: transform;
+    transform: scale(0, 1);
+    transform-origin: left top;
+  }
 }
 
 .p-header__link:hover::after {

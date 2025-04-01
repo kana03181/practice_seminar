@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.p-about__bg {
+  padding-block: clamp(80 / 16 * 1rem, 4.426rem + 2.87vw, 110 / 16 * 1rem);
+  background-color: var(--color-main);
+}
+
+.p-about__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: pxtorem(32px);
+  align-items: center;
+  justify-content: center;
+  padding-block-start: clamp(32 / 16 * 1rem, 1.465rem + 2.68vw, 60 / 16 * 1rem);
+
+  @media (--md) {
+    flex-direction: row-reverse;
+    row-gap: initial;
+    column-gap: pxtorem(69px);
+  }
+}
+
+.p-about__items {
+  width: 100%;
+
+  @media (--md) {
+    width: 50%;
+  }
+
+  @media (--lg) {
+    width: calc(596 / 1110 * 100%);
+  }
+}
+
+.p-about_texts {
+  padding-block-end: clamp(16 / 16 * 1rem, 0.828rem + 0.86vw, 25 / 16 * 1rem);
+  color: var(--color-text);
+}
+
+.p-about_theme {
+  font-size: clamp(18 / 16 * 1rem, 1.01rem + 0.57vw, 24 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 1.15;
+
+  & .-lg {
+    display: block;
+    padding-block-start: clamp(10 / 16 * 1rem, 0.434rem + 0.96vw, 20 / 16 * 1rem);
+    font-size: clamp(28 / 16 * 1rem, 1.674rem + 0.38vw, 32 / 16 * 1rem);
+    line-height: 1;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+  }
+}
+
+.p-about_sentence {
+  padding-block-start: clamp(24 / 16 * 1rem, 1.194rem + 1.53vw, 40 / 16 * 1rem);
+  font-size: clamp(15 / 16 * 1rem, 0.88rem + 0.29vw, 18 / 16 * 1rem);
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.p-about__detail {
+  display: grid;
+  row-gap: pxtorem(10px);
+  margin-block-end: pxtorem(25px);
+
+  span {
+    font-family: var(--font-sans-en);
+  }
+}
+
+.p-about__detail__item {
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+
+  @media (--lg) {
+    display: flex;
+    gap: pxtorem(38px);
+  }
+
+  @media (--lg) {
+    & > dt {
+      min-width: pxtorem(50px);
+    }
+  }
+}
+
+.p-about__img {
+  order: -2;
+  aspect-ratio: 445 / 650;
+
+  @media (--md) {
+    order: initial;
+    width: 50%;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+}
+
+.p-about__about {
+  text-align: center;
+
+  @media (--md) {
+    text-align: initial;
+  }
+}

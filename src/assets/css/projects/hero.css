@@ -52,10 +52,10 @@
   @media (--xl) {
     right: 4%;
   }
-}
 
-.p-hero__profile .-sm {
-  font-size: calc(12 / 15 * 1em);
+  &.-sm {
+    font-size: calc(12 / 15 * 1em);
+  }
 }
 
 .p-hero__job {
@@ -69,31 +69,32 @@
 }
 
 .p-hero__text {
-  clip-path: inset(0 100% 0 0);
   font-family: var(--font-sans-en);
   font-weight: 700;
   line-height: 1;
-}
 
-.p-hero__text.-subtitle {
-  width: calc(117 / 320 * 100vw);
-  font-size: clamp(16 / 16 * 1rem, 0.847rem + 0.76vw, 24 / 16 * 1rem); /* view: 320-1366 */
-  color: var(--color-accent);
-  letter-spacing: 0.05em;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-  animation: leftToRight 0.6s var(--ease-in-out2) forwards;
-}
+  &.-subtitle {
+    width: calc(117 / 320 * 100vw);
+    font-size: clamp(16 / 16 * 1rem, 0.847rem + 0.76vw, 24 / 16 * 1rem); /* view: 320-1366 */
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    opacity: 0;
+    animation: leftToRight 1.2s ease forwards;
+  }
 
-.p-hero__text.-title {
-  padding-block: pxtorem(19px) pxtorem(10px);
-  font-size: clamp(32 / 16 * 1rem, 0.7rem + 6.5vw, 100 / 16 * 1rem); /* view: 320-1366 */
-  color: var(--color-text);
-  letter-spacing: 0.016em;
-  animation: leftToRight 0.6s var(--ease-in-out2) 0.4s forwards;
+  &.-title {
+    padding-block: pxtorem(19px) pxtorem(10px);
+    font-size: clamp(32 / 16 * 1rem, 0.7rem + 6.5vw, 100 / 16 * 1rem); /* view: 320-1366 */
+    color: var(--color-text);
+    letter-spacing: 0.016em;
+    opacity: 0;
+    animation: leftToRight 1.2s ease 0.2s forwards;
 
-  span {
-    display: block;
+    & span {
+      display: block;
+    }
   }
 }
 
@@ -102,7 +103,8 @@
   line-height: 1.15;
   color: var(--color-text);
   letter-spacing: 0.07em;
-  animation: leftToRight 0.6s var(--ease-in-out2) 0.4s forwards;
+  opacity: 0;
+  animation: leftToRight 1.2s ease 0.4s forwards;
 }
 
 .p-hero__text__img {
@@ -112,7 +114,7 @@
   width: clamp(100 / 16 * 1rem, 1.929rem + 21.61vw, 326 / 16 * 1rem);
   opacity: 0;
   transform: translate(5px, 0) rotate(-13deg);
-  animation: img_fadeIn 1s var(--ease-in-out2) 1.2s forwards;
+  animation: img_fadeIn 1.6s ease 0.6s forwards;
 
   @media (--md) {
     bottom: -10px;
@@ -141,8 +143,8 @@
 .p-hero__button {
   width: 100%;
   margin-block-start: clamp(20 / 16 * 1rem, 6.25vw, 64 / 16 * 1rem); /* 320-1024 */
-  clip-path: inset(0 100% -11px 0);
-  animation: button_leftToRight 0.6s var(--ease-in-out2) 0.8s forwards;
+  opacity: 0;
+  animation: button_leftToRight 1.2s ease 0.6s forwards;
 
   @media (--lg) {
     margin-block-start: pxtorem(32px); /* 320-1024 */
@@ -151,28 +153,40 @@
 
 @keyframes leftToRight {
   0% {
-    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+
+  80% {
+    opacity: 1;
   }
 
   100% {
-    clip-path: inset(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes button_leftToRight {
   0% {
-    clip-path: inset(0 100% -11px 0);
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+
+  80% {
+    opacity: 1;
   }
 
   100% {
-    clip-path: inset(0 0 -11px 0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes img_fadeIn {
   0% {
     opacity: 0;
-    transform: translate(5px, 0) rotate(-13deg);
+    transform: translate(10px, 0) rotate(-13deg);
   }
 
   100% {

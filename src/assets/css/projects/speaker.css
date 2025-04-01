@@ -79,13 +79,15 @@
     aspect-ratio: 445 / 460;
   }
 
-  img {
+  & img {
+    height: 100%;
+    object-fit: cover;
     opacity: 0;
   }
 }
 
 .js-speaker__img.is-show {
-  > img {
+  & > img {
     animation: img-opacity 1s ease 0.6s forwards;
   }
 }
@@ -101,8 +103,8 @@
 
 .js-speaker__img.is-show::after {
   animation:
-    fromLeftStart 0.5s var(--ease-in-out2) forwards,
-    fromLeftend 0.5s var(--ease-in-out3) 0.5s forwards;
+    fromLeftStart 0.38s var(--ease-in-out2) forwards,
+    fromLeftend 0.38s var(--ease-in-out3) 0.45s forwards;
 }
 
 @keyframes fromLeftStart {

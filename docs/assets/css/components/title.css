@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.c-title {
+  font-family: var(--font-sans-en);
+  font-size: clamp(32 / 16 * 1rem, 1.465rem + 2.68vw, 60 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-accent);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.c-title .-small {
+  display: block;
+  padding-block-start: pxtorem(10px);
+  font-family: var(--font-sans-ja);
+  font-size: clamp(15 / 16 * 1rem, 0.842rem + 0.48vw, 20 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-text);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
